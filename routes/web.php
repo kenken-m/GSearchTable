@@ -18,6 +18,4 @@ Route::get('/', function () {
     return view('search');
 });
 
-//Route::get('/search', 'SearchController@index');
-//Route::get('/search', [SearchController::class, 'index']);
 Route::get('/search', [SearchController::class, 'index'])->name('search');
